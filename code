@@ -124,3 +124,8 @@ qiime composition ancom \
   --m-metadata-column deliverymode \
   --o-visualization ancom-deliverymode.qzv
   
+ qiime diversity adonis --i-distance-matrix core-metrics-results/bray_curtis_distance_matrix.qza --m-metadata-file Metadata.tsv --p-formula deliverymode --p-permutations 999 --p-n-jobs 1 --o-visualization bc_permanova.qzv
+Saved Visualization to: bc_permanova.qzv
+sathalye@bell-fe04:/depot/microbiome/data/2021_ANSC595/shreya/project/qiime $ qiime diversity adonis --i-distance-matrix core-metrics-results/weighted_unifrac_distance_matrix.qza --m-metadata-file Metadata.tsv --p-formula deliverymode --p-permutations 999 --p-n-jobs 1 --o-visualization wuni_permanova.qzv
+Saved Visualization to: wuni_permanova.qzv
+  
